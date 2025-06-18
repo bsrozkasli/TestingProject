@@ -1,0 +1,17 @@
+﻿{
+  "stryker-config": {
+    "project": "C:/Users/basar/RiderProjects/nopCommerce/src/Presentation/Nop.Web.Framework/Nop.Web.Framework.csproj",
+    "test-projects": [
+      "C:/Users/basar/RiderProjects/nopCommerce/src/Mutation/Mutation.csproj"
+    ],
+    "mutate": [
+      "C:/Users/basar/RiderProjects/nopCommerce/src/Presentation/Nop.Web.Framework/Security/FilePermissionHelper.cs"
+    ],
+    "reporters": [ "html", "progress" ],
+    "thresholds": {
+      "high": 80,
+      "low": 60,
+      "break": 0
+    }
+  }
+}
