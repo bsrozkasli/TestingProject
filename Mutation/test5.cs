@@ -11,7 +11,7 @@ namespace Nop.Tests.Core
         [Test]
         public void EnsureMaximumLength_Should_Truncate_String_When_Too_Long()
         {
-            string input = "OpenAIChatGPT";
+            string input = "test";
             string result = CommonHelper.EnsureMaximumLength(input, 5);
             result.Should().Be("OpenA");
         }
@@ -19,7 +19,7 @@ namespace Nop.Tests.Core
         [Test]
         public void EnsureMaximumLength_Should_Append_Postfix_When_Truncated()
         {
-            string input = "OpenAIChatGPT";
+            string input = "test";
             string result = CommonHelper.EnsureMaximumLength(input, 8, "...");
             result.Should().Be("OpenA...");
         }

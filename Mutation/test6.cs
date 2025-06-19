@@ -33,11 +33,7 @@ namespace Nop.Tests.Web.Framework.Security
             FilePermissionHelperTestAccess.CheckUserFilePermissions(0, false, true, false, false).Should().BeFalse();
         }
     }
-
-    /// <summary>
-    /// FilePermissionHelper'ın internal/private methodunu test için public static wrapper.
-    /// (Test projesinde FilePermissionHelper.cs dosyasını açıp bu wrapper'ı ekleyip sonra testleri çalıştırabilirsin.)
-    /// </summary>
+    
     public static class FilePermissionHelperTestAccess
     {
         public static bool CheckUserFilePermissions(int userFilePermission, bool checkRead, bool checkWrite, bool checkModify, bool checkDelete)
